@@ -8,7 +8,7 @@ import ContentContact from "./ContentContact";
 import Footer from './Footer'
 import NotFound from "./NotFound";
 
-function Contenido({ homeRef, projectRefClick, aboutmeRefClick, projectRef, aboutmeRef, contactRef}) {
+function Contenido() {
 
     return (
         <>
@@ -21,10 +21,10 @@ function Contenido({ homeRef, projectRefClick, aboutmeRefClick, projectRef, abou
                     <Route path='*' element={<NotFound />} />                        
                 </Routes> */}
                 
-                <ContentTop homeRef={homeRef} projectRefClick={projectRefClick} aboutmeRefClick={aboutmeRefClick} />
-                <ContentProjects projectRef={projectRef} />
-                <ContentAboutMe aboutmeRef={aboutmeRef} />
-                <ContentContact contactRef={contactRef} />
+                <ContentTop />
+                <ContentProjects />
+                <ContentAboutMe />
+                <ContentContact />
                 <Footer />
 
             </main>

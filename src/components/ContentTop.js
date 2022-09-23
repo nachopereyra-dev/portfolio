@@ -2,10 +2,15 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import foto from '../assets/img/foto.svg'
 
-function ContentTop({homeRef, projectRefClick, aboutmeRefClick}) {
+function ContentTop() {
+
+    const onClick = (sectionId) => {
+        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth'})
+      }
+
     return (
         <>
-            <div className="content" ref={homeRef}>
+            <div className="content" id="home" >
                 <div className="content-top">
                     <div className="foto">
                         <img src={foto} alt='foto-personal' />
@@ -21,11 +26,11 @@ function ContentTop({homeRef, projectRefClick, aboutmeRefClick}) {
                     <div className="buttons">
 
                         <div className="portfolio-button">
-                            <Link to={'/'} onClick={projectRefClick}>Projects</Link>
+                            <Link to={'/'} onClick={() => onClick('projects')}>Projects</Link>
                         </div>
 
                         <div className="about-me-button">
-                            <Link to={'/'} onClick={aboutmeRefClick}>About me</Link>
+                            <Link to={'/'} onClick={() => onClick('about-me')}>About me</Link>
                         </div>
 
                     </div>

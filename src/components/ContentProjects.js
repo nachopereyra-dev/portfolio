@@ -3,7 +3,9 @@ import Article from './Article'
 
 let project1 = {
     name: 'Nachopereyra.dev',
-    description: 'This was my first project developed entirely with React. It was a great personal challenge because at the beginning I did not have enough knowledge to achieve what I wanted. It was hours of experimentation, trials and errors that allowed me to obtain the final version that I had projected at the beginning. I hope you like it, in the links you can see the project and the development phases, from design and layout to code implementation.',
+    mainDescription: 'This was my first project developed entirely with React.',
+    secondDescription: ' It was a great personal challenge because at the beginning I did not have enough knowledge to achieve what I wanted. It was hours of experimentation, trials and errors that allowed me to obtain the final version that I had projected at the beginning.',
+    thirdDescription: 'I hope you like it, in the links you can see the project and the development phases, from design and layout to code implementation.',
     className: ''
 }
 
@@ -27,11 +29,11 @@ let project4 = {
 
 let projects = [project1, project2, project3, project4]
 
-function ContentProjects({projectRef}) {
+function ContentProjects() {
 
     return (
         <>
-            <section className="projects" id="projects" ref={projectRef}>
+            <section className="projects" id="projects" >
 
                 <h2 className="titulo">PROJECTS</h2>
 

@@ -1,9 +1,9 @@
 import React from "react";
 
-function ContentContact({contactRef}) {
+function ContentContact() {
     return (
         <>
-            <section className="contact" ref={contactRef}>
+            <section className="contact" id="contact">
                 <h2 className="titulo">CONTACT</h2>
                 <div className="sub-contact">
                     <p><span>Send me</span></p>

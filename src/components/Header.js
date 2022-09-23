@@ -4,24 +4,28 @@ import Navbar from "./NavBar";
 import MenuButton from './MenuButton'
 import logo from '../assets/img/Nachopereyra.dev.svg'
 
-function Header({ homeRefClick, projectRefClick, aboutmeRefClick, contactRefClick }) {
+function Header() {
 
     const [open, setOpen] = useState(false);
   
     const handleClick = () => {
       setOpen(!open)
     };
+
+    const onClick = (sectionId) => {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth'})
+    }
   
     return (
       <HeaderWrapper>
 
       <div className="sub-header">
 
-        <div onClick={homeRefClick} className="logo">
+        <div className="logo" onClick={() => onClick('home')}>
             <img src={logo} />
         </div>
 
-        <Navbar open={open} handleClick={handleClick} homeRefClick={homeRefClick} projectRefClick={projectRefClick} aboutmeRefClick={aboutmeRefClick} contactRefClick={contactRefClick} />
+        <Navbar open={open} handleClick={handleClick} />
       </div>
         <MenuButton open={open} handleClick={handleClick} />
       </HeaderWrapper>
