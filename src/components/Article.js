@@ -17,9 +17,9 @@ function Article(props) {
                 <p className="descripcion">{props.thirdDescription}</p>
             </div>
             <div className="botones">
-                    <a href='https://www.figma.com/file/pFeY9okei9IIa7t0LHdT0b/Proyecto-1-Figma?node-id=0%3A1' target='_blank'><i class="fa-brands fa-figma"></i>Figma</a>
-                    <a href='https://github.com/nachopereyra-dev' target='_blank'><i class="fa-brands fa-github"></i>Github</a>
-                    <a href='https://www.nachopereyra.dev' target='_blank'><i class="fa-brands fa-sistrix"></i>Sitio web</a>
+                    <a href={props.figma.link} target='_blank'><i class={props.figma.logo}></i>{props.figma.name}</a>
+                    <a href={props.github.link} target='_blank'><i class={props.github.logo}></i>{props.github.name}</a>
+                    <a href={props.sitioWeb.link} target='_blank'><i class={props.sitioWeb.logo}></i>{props.sitioWeb.name}</a>
                 </div>
         </ReactModal>
     ))
