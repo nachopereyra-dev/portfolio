@@ -14,7 +14,7 @@ let project1 = {
     github: {
         logo: 'fa-brands fa-github',
         name: 'Github',
-        link: 'https://github.com/nachopereyra-dev'
+        link: 'https://github.com/nachopereyra-dev/portfolio'
     },
     sitioWeb: {
         logo: 'fa-brands fa-sistrix',
@@ -25,31 +25,31 @@ let project1 = {
 }
 
 let project2 = {
-    name: 'Fifa World Cup 2022 - Penca',
+    name: 'Guia circular',
     mainDescription: 'Project in process',
     secondDescription: '',
     thirdDescription: '',
     figma: {
-        logo: '',
-        name: '',
-        link: ''
+        logo: 'fa-brands fa-figma',
+        name: 'Figma',
+        link: 'https://www.figma.com/file/ek1M9tv95etmNLzFpVGHUE/Guia-circular?node-id=102%3A426&t=PIGaw99HZkpfaUok-1'
     },
     github: {
-        logo: '',
-        name: '',
-        link: ''
+        logo: 'fa-brands fa-github',
+        name: 'Github',
+        link: 'https://github.com/nachopereyra-dev/guia-circular'
     },
     sitioWeb: {
-        logo: '',
-        name: '',
-        link: ''
+        logo: 'fa-brands fa-sistrix',
+        name: 'Sitio Web',
+        link: 'https://guia-circular.vercel.app/'
     },
     className: ''
 }
 
 let project3 = {
     name: 'Movelo',
-    mainDescription: 'Project in process',
+    mainDescription: 'E-commerce of logistics services. You can offer a logistics service while you make your daily trips, or request the shipment of an item. Project done in the fullstack developer course at Digital House. If you want to know more about the project, contact me',
     secondDescription: '',
     thirdDescription: '',
     figma: {
@@ -58,9 +58,9 @@ let project3 = {
         link: ''
     },
     github: {
-        logo: '',
-        name: '',
-        link: ''
+        logo: 'fa-brands fa-github',
+        name: 'Github',
+        link: 'https://github.com/nachopereyra-dev/movelo'
     },
     sitioWeb: {
         logo: '',
@@ -72,7 +72,7 @@ let project3 = {
 
 let project4 = {
     name: 'Coming soon :)',
-    mainDescription: 'Project in process',
+    mainDescription: 'Projects in process',
     secondDescription: '',
     thirdDescription: '',
     figma: {
